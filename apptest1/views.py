@@ -3,4 +3,8 @@ from django.shortcuts import render
 
 # Create your views here.
 def helloworld(req):
-    return HttpResponse("Hello World")
+    return HttpResponse("Big Rollers")
+
+def index(request):
+
+    return render(request, 'index.html',locals())
